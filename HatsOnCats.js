@@ -16,40 +16,40 @@ Write a program that prints which cats have hats at the end.
 */
 
 // set up array of 100 cats with no hats
-var i = 0
-var cats = []
+var i = 0;
+var cats = [];
 
 while(i < 100) {
- cats << "no"
- i += 1
+ cats = "no";
+ i += 1;
 }
 
 //Organize array of 100 cats with or without hats
-round = 1
-count = 0
-while round <= 100
- while count < 100
-  if ( (count + 1) % round == 0)
-   if (cats[count] == "no")
+var round = 1
+var count = 0
+while (round <= 100) {
+ while (count < 100) {
+  if ( (count + 1) % round == 0) {
+   if (cats[count] == "no") {
     cats[count] = "yes"
-   else
+   }else {
     cats[count] = "no"
-   end
-  end
+   }
+  }
   count += 1
- end
+ }
  round += 1
-end
+}
 
-#-----Store cats with hat in a new array-----
-a = 0
-cathat = []
-while a < 100
- if (cats[a] == "yes")
-  cathat << a
- end
- a += 1
-end
+//Store cats with hat in a new array
+a = 0;
+cathat = [];
+while(a < 100)
+ if (cats[a] == "yes") {
+  cathat << a;
+ }
+ a += 1;
+}
 
-#-----print an array of cats with hat-----
-print cathat
+//print an array of cats with hat
+document.write(cathat);
